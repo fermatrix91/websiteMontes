@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html style="zoom: reset;">
+ 
+<html ng-app="sitioApp" lang="es" >
+<!-- oncontextmenu="return false">  -->
+	<head>
+		<title>Montes Navarrete</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+		<script src="jquery/jquery-2.2.3.js"></script>
+		<script src="angular/angular.js"></script>
+		<script src="angular/angular-route.js"></script>
+		<script src="app.js" ></script>
+		
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css">		
+		<link rel="stylesheet" href="menu/stylesMenu.css">
+		
+		<link rel="stylesheet" href="dataTables/ui-grid-unstable.css" />
+		<link rel="stylesheet" href="app.css" />
+				
+	    <script src="menu/scriptMenu.js"></script>
+	</head>
+ 
+	<body onKeyDown="checkKey(event)" >
+	<!-- oncontextmenu="return false"> -->		
+	
+		<div id="contenedorSitio" class="anchuraContenedor bordeSitio" style="background:white; position: absolute;">
+			<header id="menuSuperior" class="anchuraContenedor navbar-fixed-top" style="border-bottom: 2px solid rgb(212, 81, 81);">
+				<article>
+					<div id='cssmenu'>
+						<ul>
+						   <li><a href='#inicio'>Inicio</a></li>	
+							<li style="z-index:1000;"><a href='#/ingles'>English - Español</a></li>					   
+						   <li><a href='#ajedrez'>Ajedrez</a></li>
+						   <li><a href='#web'>Web</a></li>	
+						   <li><a href='#inicio'>Contabilidad</a></li>	
+						</ul>
+					</div>
+				</article>
+			</header>
+							
+			<section>
+			<!-- oncontextmenu="return false"> -->
+			<a href="#" class="scrollup">Scroll</a>
+				<div ng-view>
+				
+				</div>					
+			</section>
+			
+		</div>
+		
+		
+		
+		<script src="bootstrap/js/bootstrap.js"></script>
+		<script src="dataTables/ui-grid-unstable.js"></script>
+		
+		<script>
+		
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 100) {
+					$('.scrollup').fadeIn();
+				} else {
+					$('.scrollup').fadeOut();
+				}
+			});
+	  
+			$('.scrollup').click(function(){
+				$("html, body").animate({ scrollTop: 0 }, 600);
+				return false;
+			});
+		
+			function checkKey(evt) {
+				if (evt.ctrlKey)
+				{
+					switch(String.fromCharCode(evt.which).toLowerCase()) { 
+						case 's':
+						//alert('sape')
+							evt.preventDefault();     
+							evt.stopPropagation();
+							return false; 
+
+						// aqui puede poner todas las tecla de combinacion que tiene programado el ie, para anularlo. 
+
+						default: 
+						break; 
+					} 
+				}
+			}
+
+			/*Reproducción de Audios*/
+			function playAudioGo(urlAudio)
+			{
+				document.getElementById(urlAudio).play(); 
+				$("button").attr("disabled", "disable");
+			}
+
+			function habilitaPlayButton()
+			{
+				$("button").removeAttr("disabled");
+			}
+
+		</script>		
+	</body>	
+</html>

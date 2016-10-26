@@ -1,0 +1,143 @@
+<div ng-controller="htmlController">	
+
+	<section style="text-align: center; margin-top: 48px;">
+		<article>
+			<div style="margin-top: 3%;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			
+				<ul id="listaMenuHtml" style="text-align: left; margin: 0;">
+					 <div class="dropdown">
+					  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Seleccione
+					  <span class="caret"></span></button>
+					  <ul class="dropdown-menu">
+					    <li><a href="#/html">Introducción</a></li>
+					    <li><a href="#/etiquetasBasicas">Etiquetas Básicas</a></li>
+					    <li>
+						<a href="#/estilosHtml">Estilos</a></li>
+					  </ul>
+					</div>
+				</ul>
+
+				<section class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<h2>Estilos con CSS</h2>
+
+					<h3 style="float: left;">Concepto</h3>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<p style="white-space: pre-line;" ng-bind="conceptoCSS" id="conceptoCSS"></p>
+					</div>
+					
+					<h3 style="float: left;">Estilo en línea</h3>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+						<div class="bs-callout bs-callout-danger col-xs-12 col-sm-12 col-md-12 col-lg-12" style="background: white; display: block; margin: auto;">
+							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+								<div style="background: white; display: block; margin: auto;">
+									<img class="pop" src="imagenes/html/estiloInlineHtml.png" style="height: auto; width:100%" />
+								</div>
+							</div>							
+
+							<div class="col-xs-0 col-sm-0 col-md-1 col-lg-1">
+								<br/>
+								<br/>
+								<br/>
+								<br/>
+								<br/>
+								<p>-----></p>
+							</div>
+
+							<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+								<div style="background: white; display: block; margin: auto;">
+									<img class="pop" src="imagenes/html/resultStyleInline.png" style="height: auto; width:100%" />
+								</div>
+							</div>							
+						</div>
+					</div>
+
+					<h3 style="float: left;">Estilo Interno</h3>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<p style="white-space: pre-line;" ng-bind="textosAnidados" id="textosAnidados"></p>
+						</div>
+
+						<div class="bs-callout bs-callout-danger col-xs-12 col-sm-12 col-md-12 col-lg-12" style="background: white; display: block; margin: auto;">
+							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+								<div style="background: white; display: block; margin: auto;">
+									<img class="pop" src="imagenes/html/estiloInternalHtml.png" style="height: auto; width:100%" />
+								</div>
+							</div>							
+
+							<div class="col-xs-0 col-sm-0 col-md-1 col-lg-1">
+								<br/>
+								<br/>
+								<br/>
+								<br/>
+								<br/>
+								<p>-----></p>
+							</div>
+
+							<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+								<div style="background: white; display: block; margin: auto;">
+									<img class="pop" src="imagenes/html/resultStyleInline.png" style="height: auto; width:100%" />
+								</div>
+							</div>							
+						</div>
+					</div>
+
+					<h3 style="float: left;">Estilo Externo</h3>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<p style="white-space: pre-line;" ng-bind="listasUL" id="listasUL"></p>
+					</div>
+
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+						<div class="bs-callout bs-callout-danger col-xs-12 col-sm-12 col-md-12 col-lg-12" style="background: white; display: block; margin: auto;">
+							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+								<div style="background: white; display: block; margin: auto;">
+									<img class="pop" src="imagenes/html/estiloExternalHtml.png" style="height: auto; width:100%" />
+								</div>
+							</div>							
+
+							<div class="col-xs-0 col-sm-0 col-md-1 col-lg-1">
+								<br/>
+								<br/>
+								<br/>
+								<br/>
+								<br/>
+								<p>-----></p>
+							</div>
+
+							<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+								<div style="background: white; display: block; margin: auto;">
+									<img class="pop" src="imagenes/html/resultStyleInline.png" style="height: auto; width:100%" />
+								</div>
+							</div>							
+						</div>
+					</div>
+
+					<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						  <div class="modal-dialog">
+						    <div class="modal-content">              
+						      <div class="modal-body">
+						      	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+						        <img src="" class="imagepreview" style="width: 100%;" >
+						      </div>
+						    </div>
+						  </div>
+						</div>	
+
+				</section>			
+
+				<section class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<h2></h2>
+				</section>				
+				
+			</div>			
+			
+		</article>				
+	</section>
+	
+	<section class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="excedente" style="height: 48px;">
+	
+	</section>
+	
+</div>

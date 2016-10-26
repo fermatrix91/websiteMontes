@@ -1,0 +1,86 @@
+<div ng-controller="jqueryController">	
+
+	<section style="text-align: center; margin-top: 48px;">
+		<article>
+			<div style="margin-top: 3%;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			
+				<ul id="listaMenuHtml" style="text-align: left; margin: 0;">
+					 <div class="dropdown">
+					  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Seleccione
+					  <span class="caret"></span></button>
+					  <ul class="dropdown-menu">
+					    <li><a href="#/jquery">Introducción</a></li>
+					    <li><a href="#/basesJquery">Selectores básicos</a></li>
+					    <li><a href="#/eventosBasicos">Eventos básicos</a></li>
+					  </ul>
+					</div>
+				</ul>
+
+				<section class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<h2>Bases para utilizar JQuery</h2>
+					
+					<h3 style="float: left;">Sintaxis</h3>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<p>
+							Para utilizar JQuery necesitamos lo siguiente:<br/>
+							El símbolo utilizado para acceder a JQuery
+						</p>
+						<p style="color: red;">$</p>
+						<p>
+							El selector de nuestro elemento Html, escrito entre comillas
+						</p>
+						<p style="color: darkblue;">simples: 'selector' <br/> dobles: "selector"</p>
+						<p>
+							Y por último una acción, escrita luego de un punto. Es una buena práctica terminar la oración con el signo punto y coma ";"
+						</p>
+						<p style="color: green;">.Accion();</p>
+						<p>$('selector').action();</p>
+
+					</div>
+
+					<h3 style="float: left;">Selector por Id</h3>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<p>Es el nombre de identificación ÚNICO de cada elemento html al que le asignemos.</p>
+						<p ng-bind="ejemploId"></p>
+						<p>El id del botón creado es botonEnviarFormulario. Es de suma importancia que cuando asignemos un "id" a un elemento Html, éste debe ser único en todo el documento para evitar resultados inesperados o incorrectos en el manejo de tales elementos.</p>
+
+						<p>Para leer un selector por "id" se hace así # (signo numeral) antes del nombre escogido como id<br/><br/> $("#botonEnviarFormulario")</p>
+						
+					</div>
+
+					<h3 style="float: left;">Selector por Class</h3>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<p>La clase es el nombre que podemos asignar a uno o más elementos a diferencia del id que es único. Si quisiéramos asignar un color de texto azul a más de un elemento podemos hacer uso de "class"</p>
+						<p ng-bind="ejemploClass"></p>
+						<p>La clase que pueden tener todos los elementos a los que le asignemos es botonesAzules (puede ser cualquier nombre). </p>
+
+						<p>Para leer un selector por "class" se hace así . (punto) antes del nombre escogido como clase<br/><br/> $(".botonEnviarFormulario")</p>
+						
+					</div>
+
+					<h3 style="float: left;">Selector por Elemento</h3>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<p>El nombre del elemento Html es clave en este aspecto. Si quisiéramos hacer algo con todos los párrafos de nuestro documento Html, en lugar de colocar la misma clase a todos, podemos manipularlos con el nombre de su etiqueta, que por supuesto la comparten todos.</p>
+						<p style="white-space: pre-line;" ng-bind="ejemploElemento"></p>
+					</div>
+
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<p></p>	
+					</div>
+					
+				</section>			
+
+				<section class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<h2></h2>
+				</section>				
+				
+			</div>			
+			
+		</article>				
+	</section>
+	
+	<section class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="excedente" style="height: 48px;">
+	
+	</section>
+	
+</div>

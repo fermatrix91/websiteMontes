@@ -1,0 +1,406 @@
+<div ng-controller="htmlController">	
+
+	<section style="text-align: center; margin-top: 48px;">
+		<article>
+			<div style="margin-top: 3%;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			
+				<ul id="listaMenuHtml" style="text-align: left; margin: 0;">
+					 <div class="dropdown">
+					  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Seleccione
+					  <span class="caret"></span></button>
+					  <ul class="dropdown-menu">
+					    <li><a href="#/ajedrezUno">Lección Uno</a></li>
+					</div>
+				</ul>
+
+				<section class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<h2>AJEDREZ</h2>
+					<h3>(El maravilloso juego-ciencia)</h3>
+					
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<p style="white-space: pre-line;">Tan fascinante es el ajedrez que en cada juego se presentan miles de alternativas para desarrollar la partida, y usted no necesita ser profesional para disfrutarlo. Gracias a las bondades de nuestra época, encontramos en internet partidas animadas de grandes genios del ajedrez (Capablanca, Kasparov, Carlsen, etc.), además, podemos disfrutar en vivo (gratis – vía internet) torneos de la élite y campeonatos mundiales.</p>
+						<p>Antes de entrar en materia con las explicaciones de cómo posicionar el tablero, cuáles son las piezas y reglas, permítanos resumir una leyenda que seguro va a disfrutar:</p>
+					</div>
+
+					<h3 style="float: left;">Leyenda del sabio y el rey.</h3>
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<p style="white-space: pre-line;">Un sabio, además de regalar el ajedrez a un rey, le explicó cómo jugarlo. El rey quedó maravillado y, en agradecimiento, le dijo al sabio que pidiera cualquier cosa y le sería concedida.</p>
+
+						<p style="white-space: pre-line;">El sabio pidió recibir lo siguiente: por la primera casilla del tablero le darían un grano de trigo, por la segunda dos granos, y así sucesivamente, duplicarían la cantidad de granos hasta cubrir las 64 casillas (1+2+4+8…).</p>
+
+						<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+							<div style="display: block; margin: auto;">
+								<img  class="pop" src="imagenes/AjedrezImagenes/ajedrez0001.png" style="height: auto; width:100%" />
+							</div>
+						</div>
+
+						<p style="white-space: pre-line;">El rey se sintió ofendido porque el sabio había pedido algo tan “insignificante”. Los matemáticos de la corte tardaron mucho calculando la cantidad de trigo que debían entregar al sabio. Después de muchas horas, por fin tenían la respuesta:</p>
+
+						<p style="white-space: pre-line;">18,446,744,073,709,556,883 granos de trigo. Dieciocho trillones cuatrocientos cuarenta y seis mil setecientos cuarenta y cuatro billones setenta y tres mil setecientos nueve millones quinientos cincuenta y seis mil ochocientos ochenta y tres granos de trigo.</p>
+
+						<p style="white-space: pre-line;">Considerando que en una libra de trigo caben 11,363 granos aproximadamente (1,136,300 en un quintal), debían entregar al sabio <strong>16,234,044,481,815 quintales</strong> – la producción mundial de unos mil años.</p>
+
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div style="display: block; margin: auto;">
+								<img  class="pop" src="imagenes/AjedrezImagenes/tablaTrigos.png" style="height: auto; width:100%" />
+							</div>
+						</div>
+					</div>
+				</section>	
+
+				<section class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<h2>LECCIÓN 1</h2>
+					<h3>(Objetivo, el tablero, las piezas, otras reglas, notación)</h3>
+
+					<h3 style="float: left;">1.A. Objetivo.</h3>
+					
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<p style="white-space: pre-line;">El ajedrez es una guerra entre dos jugadores con sus respectivos rey y ejército; el objetivo principal es dar “mate” (muerte) al rey contrario; no siempre gana el que más piezas ha capturado (sin dar mate al rey contrario es imposible ganar el juego, aunque sean capturadas todas sus piezas). Dar mate significa amenazar al rey enemigo y que, al mismo tiempo, éste no pueda escapar; el rey es la única pieza que NO puede ser capturada.</p>
+						<p>El resultado final puede ser victoria, empate o derrota. Generalmente (no siempre) en los torneos se califica la victoria con 1 punto, al empate con ½ punto y la derrota con 0 punto.</p>
+					</div>
+
+					<h3 style="float: left;">1.B. El tablero.</h3>
+					
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+							<div style="display: block; margin: auto;">
+								<img  class="pop" src="imagenes/AjedrezImagenes/ajedrez0101.png" style="height: auto; width:100%" />
+								<span><strong>01.01</strong></span>
+							</div>
+						</div>
+						<p style="white-space: pre-line;">Es cuadrado y consta de 64 casillas, 32 de un mismo color claro y 32 de un mismo color oscuro. Ambos jugadores, uno en cada extremo, deben tener de su lado la casilla esquinera derecha de color claro, y en el extremo izquierdo la casilla esquinera de color oscuro.</p>
+					</div>
+
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<p style="white-space: pre-line;">Cada casilla tiene su nombre, y los nombres parten en orden ascendente desde la posición que juegan las piezas blancas; por columnas desde la “a” hasta la “h”, y por filas desde la “1” hasta la “8”.</p>
+
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<div style="display: block; margin: auto;">
+								<img  class="pop" src="imagenes/AjedrezImagenes/ajedrez0102.png" style="height: auto; width:100%" />
+								<span><strong>01.02</strong></span>
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<div style="display: block; margin: auto;">
+								<img  class="pop" src="imagenes/AjedrezImagenes/ajedrez0103.png" style="height: auto; width:100%" />
+								<span><strong>01.03</strong></span>
+							</div>
+						</div>
+					</div>
+
+					<h3 style="float: left;">1.C. Las piezas.</h3>
+					
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+							<div style="display: block; margin: auto;">
+								<img  class="pop" src="imagenes/AjedrezImagenes/ajedrez0104.png" style="height: auto; width:100%" />
+								<span><strong>01.04</strong></span>
+							</div>
+						</div>
+						<p style="white-space: pre-line;">Son 16 piezas para cada jugador:
+							8 peones, 2 torres, 2 caballos, 2 alfiles, 1 dama, 1 rey.</br></br>
+							<strong>1.C.a.</strong></br>La posición inicial de las piezas:</br>
+							- 8 peones, en la primera fila.
+							- 2 torres, en los extremos izquierdo y derecho en la segunda fila
+							- 2 caballos, a la par de las torres.
+							- 2 alfiles, a la par de los caballos.
+							- 1 dama, en el centro – la dama blanca en la casilla color claro y la dama negra en la casilla color oscuro.
+							- 1 rey, a la par de la dama.
+						</p>
+						<p style="white-space: pre-line;"><strong>1.C.b. El valor de las piezas:</strong></br>Se ha asignado valor a cada pieza en función de lo buena que es para atacar y defender. En orden de importancia, desde 1 hasta 9 puntos.</p>
+						<p style="white-space: pre-line;">Peón (1), Caballo (3.5), Alfil (3.5), Torre (5), Dama (9).</p>
+						<p style="white-space: pre-line;"><strong>1.C.c. El movimiento de cada pieza:</strong></br>Se mueven de diferentes maneras, pero a la hora de capturar todas ocupan el lugar que antes tenía la pieza capturada.</p>
+					</div>
+
+
+					<h4 style="float: left;">* Peón.</h4>
+					
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+								<div style="display: block; margin: auto;">
+									<img  class="pop" src="imagenes/AjedrezImagenes/ajedrez0105.png" style="height: auto; width:100%" />
+									<span><strong>01.05</strong></span>
+								</div>
+							</div>
+							<p style="white-space: pre-line;">- Avanza en línea vertical (sobre la misma columna de su posición).</p>						
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+								<div style="display: block; margin: auto;">
+									<img  class="pop" src="imagenes/AjedrezImagenes/ajedrez0106.png" style="height: auto; width:100%" />
+									<span><strong>01.06</strong></span>
+								</div>
+							</div>
+							<p style="white-space: pre-line;">- Solamente en su primer movimiento, cada peón tiene la opción de avanzar una o dos casillas, después avanzará solamente una casilla por turno.</p>
+
+							</br>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<p style="white-space: pre-line;">- Captura en su casilla próxima a la izquierda o a la derecha diagonalmente, solamente hacia adelante.</p>
+							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+								<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+									<div style="display: block; margin: auto;">
+										<img  class="pop" src="imagenes/AjedrezImagenes/ajedrez0107.png" style="height: auto; width:100%" />
+										<span><strong>01.07</strong></span>
+									</div>	
+								</div>
+							</div>
+							
+							<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+								<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+									<div style="display: block; margin: auto;">
+										<img  class="pop" src="imagenes/AjedrezImagenes/ajedrez0108.png" style="height: auto; width:100%" />
+										<span><strong>01.08</strong></span>
+									</div>
+								</div>								
+							</div>
+
+							<p style="white-space: pre-line;">- Si logra llegar al otro extremo del tablero (la última fila para él) recibe como premio el ser promovido a cualquiera de las siguientes piezas: caballo, alfil, torre o dama.</p>
+					</div>
+
+
+					<h4 style="float: left;">* Caballo.</h4>
+					
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+								<div style="display: block; margin: auto;">
+									<img  class="pop" src="imagenes/AjedrezImagenes/ajedrez0109.png" style="height: auto; width:100%" />
+									<span><strong>01.09</strong></span>
+								</div>
+							</div>
+							<p style="white-space: pre-line;">- Se mueve formando una L, en cualquier dirección, siempre que en la casilla a ocupar no se encuentre una pieza de su propio bando (de cualquier color). En la imagen 01.09 el caballo tiene 8 opciones para moverse.</p>						
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+								<div style="display: block; margin: auto;">
+									<img  class="pop" src="imagenes/AjedrezImagenes/ajedrez0110.png" style="height: auto; width:100%" />
+									<span><strong>01.10</strong></span>
+								</div>
+							</div>
+							<p style="white-space: pre-line;">- Captura las piezas que se encuentre en cualquier dirección, sin importar que haya otras piezas a su paso. En la imagen 01.10 el caballo blanco puede capturar solamente a la dama negra.</p>
+
+							</br>
+						</div>
+					</div>
+
+
+
+					<h4 style="float: left;">* Alfil.</h4>
+					
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+								<div style="display: block; margin: auto;">
+									<img  class="pop" src="imagenes/AjedrezImagenes/ajedrez0111.png" style="height: auto; width:100%" />
+									<span><strong>01.11</strong></span>
+								</div>
+							</div>
+							<p style="white-space: pre-line;">- Se mueve en un mismo color, avanzando y retrocediendo. En la imagen 01.11 el alfil tiene 13 opciones para moverse.</p>						
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+								<div style="display: block; margin: auto;">
+									<img  class="pop" src="imagenes/AjedrezImagenes/ajedrez0112.png" style="height: auto; width:100%" />
+									<span><strong>01.12</strong></span>
+								</div>
+							</div>
+							<p style="white-space: pre-line;">- En la imagen 01.12 el alfil puede capturar solamente la torre en c6 (Tc6) y la dama en b1 (Db1); no puede capturar al peón de h7 porque el caballo se lo impide.</p>
+
+							</br>
+						</div>
+					</div>
+
+					<h4 style="float: left;">* Torre.</h4>
+					
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+								<div style="display: block; margin: auto;">
+									<img  class="pop" src="imagenes/AjedrezImagenes/ajedrez0113.png" style="height: auto; width:100%" />
+									<span><strong>01.13</strong></span>
+								</div>
+							</div>
+							<p style="white-space: pre-line;">- Se mueve en dirección vertical y horizontal; adelante, atrás, izquierda y derecha. En la imagen 01.13 la torre tiene 14 opciones para mover.</p>						
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+								<div style="display: block; margin: auto;">
+									<img  class="pop" src="imagenes/AjedrezImagenes/ajedrez0114.png" style="height: auto; width:100%" />
+									<span><strong>01.14</strong></span>
+								</div>
+							</div>
+							<p style="white-space: pre-line;">- En la imagen 01.14 la torre puede capturar al caballo en h7 y al alfil en c1.</p>
+
+							</br>
+						</div>
+					</div>
+
+
+					<h4 style="float: left;">* Dama.</h4>
+					
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+								<div style="display: block; margin: auto;">
+									<img  class="pop" src="imagenes/AjedrezImagenes/ajedrez0115.png" style="height: auto; width:100%" />
+									<span><strong>01.15</strong></span>
+								</div>
+							</div>
+							<p style="white-space: pre-line;">- Su movimiento es igual al del alfil y al de la torre, avanzando y retrocediendo la cantidad de casillas que quiera, siempre que las casillas estén libres. En la imagen 01.15 la dama tiene 27 opciones para mover (poderosa).</p>						
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+								<div style="display: block; margin: auto;">
+									<img  class="pop" src="imagenes/AjedrezImagenes/ajedrez0116.png" style="height: auto; width:100%" />
+									<span><strong>01.16</strong></span>
+								</div>
+							</div>
+							<p style="white-space: pre-line;">- Captura en su recorrido diagonal, vertical y horizontal. En la imagen 01.19 la dama blanca puede capturar cualquiera de las piezas negras. ¿Cuál capturaría usted?</p>
+
+							</br>
+						</div>
+					</div>
+
+
+					<h4 style="float: left;">* Rey.</h4>
+					
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+								<div style="display: block; margin: auto;">
+									<img  class="pop" src="imagenes/AjedrezImagenes/ajedrez0117.png" style="height: auto; width:100%" />
+									<span><strong>01.17</strong></span>
+								</div>
+							</div>
+							<p style="white-space: pre-line;">- Se mueve en dirección diagonal, vertical y horizontal.
+							- Avanza y retrocede solamente una casilla por turno.
+							- En la imagen 01.17 el rey tiene 8 opciones para mover.</p>						
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+								<div style="display: block; margin: auto;">
+									<img  class="pop" src="imagenes/AjedrezImagenes/ajedrez0118.png" style="height: auto; width:100%" />
+									<span><strong>01.18</strong></span>
+								</div>
+							</div>
+							<p style="white-space: pre-line;">- Los dos reyes nunca estarán juntos, no se pueden atacar entre ellos.
+							- Nunca puede ocupar una casilla que esté siendo amenazada por una pieza contraria; en la imagen 01.18 la única opción que tiene el rey es capturar la torre (en h2).</p>
+
+							</br>
+						</div>
+					</div>
+
+					</br>
+
+					<h3 style="float: left;">1.D. Otras reglas.</h3>
+					
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+						<p style="white-space: pre-line;">* Siempre empiezan a mover las blancas.
+						* Solamente un movimiento en cada turno (excepto en el enroque).
+						* Para todas las piezas es opcional capturar.
+						* Las piezas ocupan la posición que antes tenía la pieza capturada.</p>
+					</div>
+
+					<h4 style="float: left;">* Peón al paso.</h4>					
+					
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<p style="white-space: pre-line;">- Supongamos el peón de c2 salta a la casilla c4 (por ser su primer movimiento – Imagen 01.19). El peón negro tiene la opción de capturarlo y ocupar la casilla c3; en este caso la nueva posición será como lo indica la imagen 01.20.</p>
+						<p style="white-space: pre-line;">- A esta jugada se le llama “peón al paso”, y es válida para los dos bandos.</p>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+								<div style="display: block; margin: auto;">
+									<img  class="pop" src="imagenes/AjedrezImagenes/ajedrez0119.png" style="height: auto; width:100%" />
+									<span><strong>01.19</strong></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+								<div style="display: block; margin: auto;">
+									<img  class="pop" src="imagenes/AjedrezImagenes/ajedrez0120.png" style="height: auto; width:100%" />
+									<span><strong>01.20</strong></span>
+								</div>
+							</div>
+							</br>
+						</div>
+					</div>
+
+					<h4 style="float: left;">* Enroque corto (0-0) y enroque largo (0-0-0).</h4>					
+					
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<p style="white-space: pre-line;">- El enroque corto consiste en que el rey avanza 2 casillas en dirección contraria a la posición original de su dama (imagen 01.21) y, en el mismo turno, la torre se coloca al otro lado del rey (imagen 01.22).</p>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+								<div style="display: block; margin: auto;">
+									<img  class="pop" src="imagenes/AjedrezImagenes/ajedrez0121.png" style="height: auto; width:100%" />
+									<span><strong>01.21</strong></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+								<div style="display: block; margin: auto;">
+									<img  class="pop" src="imagenes/AjedrezImagenes/ajedrez0122.png" style="height: auto; width:100%" />
+									<span><strong>01.22</strong></span>
+								</div>
+							</div>
+							</br>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<p style="white-space: pre-line;">- El enroque largo consiste en que el rey avanza 2 casillas en dirección a la posición original de su dama (imagen 01.23) y, en el mismo turno, la torre se coloca al otro lado del rey (imagen 01.24).</p>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+								<div style="display: block; margin: auto;">
+									<img  class="pop" src="imagenes/AjedrezImagenes/ajedrez0123.png" style="height: auto; width:100%" />
+									<span><strong>01.23</strong></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+							<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+								<div style="display: block; margin: auto;">
+									<img  class="pop" src="imagenes/AjedrezImagenes/ajedrez0124.png" style="height: auto; width:100%" />
+									<span><strong>01.24</strong></span>
+								</div>
+							</div>
+							</br>
+						</div>
+					</div>
+
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+						<p style="white-space: pre-line;">- Para poder realizar el enroque, es obligatorio que ninguna de las dos piezas participantes haya sido movida antes.
+						- Es imposible realizar el enroque si una de las casillas por donde pasará el rey está siendo amenazada por el oponente.
+						- Es imposible realizar el enroque si el rey está en jaque.</p>
+					</div>
+
+
+
+
+				</section>
+
+
+
+
+
+				<section class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<h2></h2>
+				</section>				
+				
+			</div>			
+			
+		</article>				
+	</section>
+	
+	<section class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="excedente" style="height: 48px;">
+	
+	</section>
+	
+</div>
